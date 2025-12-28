@@ -1,6 +1,6 @@
 import axios from "axios";
 
-async function fetchPosts():Promise<Post[]> {
+async function fetchPosts(): Promise<Post[]> {
     const response = await axios.get<Post[]>(
     'https://jsonplaceholder.typicode.com/posts'
     );
